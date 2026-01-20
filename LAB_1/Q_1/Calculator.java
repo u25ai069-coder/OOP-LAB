@@ -6,10 +6,10 @@ public class Calculator
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Int a: ");
+        System.out.print("Enter Int a: ");
         int a = sc.nextInt();
 
-        System.out.println("Enter Int b: ");
+        System.out.print("Enter Int b: ");
         int b = sc.nextInt();
 
         Operations op = new Operations();
