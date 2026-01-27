@@ -8,7 +8,6 @@ public class Calculator
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Int a: ");
         int a = sc.nextInt();
-
         System.out.print("Enter Int b: ");
         int b = sc.nextInt();
 
