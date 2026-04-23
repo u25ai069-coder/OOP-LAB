@@ -11,7 +11,6 @@ public class RunnableTest {
 
         System.out.println("Main is ended");
 
-        
     }
 }
 

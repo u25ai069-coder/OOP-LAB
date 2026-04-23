@@ -3,13 +3,23 @@ package LAB_9;
 public class ThreadTest {
     public static void main(String[] args) {
 
-        System.out.println("Main is started");
-        
         MyThread thread1 = new MyThread();
 
-        System.out.println("Main is ended");
-
+        System.out.println("Main is started");
+        
         thread1.start();
+
+        try {
+
+            Thread.sleep(2000);
+        } 
+        catch (InterruptedException e) {
+            
+            e.printStackTrace();
+        }
+
+        System.out.println("Main has ended");
+    
     }
 }
 
@@ -29,12 +39,14 @@ class MyThread extends Thread {
         System.out.println("Thread is Running");
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } 
         catch (InterruptedException e) {
             
             e.printStackTrace();
         }
+
+        System.out.println("Thread has ended");
         
     }
 }
